@@ -4,9 +4,6 @@ function About(){
     let myStyle = {
         backgroundColor: 'red'
     }
-    let myClass = {
-        fontSize: '50px'
-    }
     let myStudents = ['Stephen', 'Pesams', 'Hyzeek', 'Zlatan', 'Alhaja', 'Comfort', 'Uthman'];
     // let myStudents = [];
 

@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "ty",
+      "title": "ertgyh",
+      "body": "wertyuhgfd"
+    },
+    {
+      "author": "Work",
+      "title": "Must work",
+      "body": "If dem born you well, no work",
+      "id": 2
+    },
+    {
+      "author": "NAvigate",
+      "title": "To add post",
+      "body": "Hello world",
+      "id": 3
+    },
+    {
+      "author": "NAvigate",
+      "title": "To add post",
+      "body": "Hello world",
+      "id": 4
+    },
+    {
+      "author": "Daniel",
+      "title": "Testing mic",
+      "body": "oyutrewsdfghjkl;kjhgzxcvbnm,nbvcxsdfghjoiuytresdfghjkljhxccxvbnm,ndfgtyuiojhgfddfghjkljcxvbnm,fgyuio;lkjhgfdjgf",
+      "id": 5
+    },
+    {
+      "author": "qwertyu",
+      "title": "wertyui",
+      "body": "wertyuioiuytrertgyuil",
+      "id": 6
+    },
+    {
+      "author": "Hungry",
+      "title": "Zlatan",
+      "body": "Ahhhhhh\nI am hungry oooo",
+      "id": 7
+    }
+  ],
+  "create": [
+    {
+      "username": "adesany",
+      "email": "another@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "Daniel",
+      "email": "daniel@gmail.com",
+      "password": "password",
+      "id": 2
+    },
+    {
+      "username": "adesa",
+      "email": "daniel@gma",
+      "password": "adesanya",
+      "id": 3
+    },
+    {
+      "username": "adesa",
+      "email": "daniel@gmatyy",
+      "password": "adesanya",
+      "id": 4
+    },
+    {
+      "username": "adesagh",
+      "email": "daniel@gmatyy",
+      "password": "adesanya",
+      "id": 5
+    },
+    {
+      "username": "adesagh",
+      "email": "daniel@gmatyy",
+      "password": "adesanya",
+      "id": 6
+    }
+  ]
+}

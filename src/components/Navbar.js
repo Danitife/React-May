@@ -16,6 +16,18 @@ const Navbar = () => {
                 {/* <a href="/profile" className="nav-link">Profile</a> */}
                 <Link to="/profile">Profile</Link>
             </li>
+            <li className="nav-item">
+                {/* <a href="/profile" className="nav-link">Profile</a> */}
+                <Link to="/morning">Morning</Link>
+            </li>
+            <li className="nav-item">
+                {/* <a href="/profile" className="nav-link">Profile</a> */}
+                <Link to="/http">Http</Link>
+            </li>
+            <li className="nav-item">
+                {/* <a href="/profile" className="nav-link">Profile</a> */}
+                <Link to="/addpost">Add Post</Link>
+            </li>
         </ul>
       </nav>  
     </>

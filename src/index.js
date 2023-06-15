@@ -5,9 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Landin from './Landin';
 // import EventHandling from './EventHandling';
+import 'antd/dist/antd.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
+import 'react-toastify/dist/ReactToastify.css'
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import {store} from '../src/Redux/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +19,9 @@ root.render(
     <BrowserRouter>
       {/* <EventHandling />
       <Landin /> */}
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

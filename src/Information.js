@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import Card from './components/Card'
+import { useSelector } from 'react-redux';
 
 const Information = () => {
+    const {num} = useSelector((state)=> state.mySlice)
     const [username, setusername] = useState("")
     const [email, setemail] = useState("")
     const [myclass, setclass] = useState("")
@@ -24,6 +26,7 @@ const Information = () => {
     }
   return (
     <>
+        <h1 className="text-warning">{num}</h1>
         <Card myClass="card shadow rounded w-25 p-1 bg-warning" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, suscipit?" />
         <Card myClass="card shadow rounded w-25 p-1 bg-secondary" text="This is DanielThis is DanielThis is DanielThis is DanielThis is Daniel" />
         <Card myClass="card shadow rounded w-25 p-1 bg-warning" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, suscipit?" />
@@ -43,7 +46,7 @@ const Information = () => {
             </div>
         </form>
 
-        {allUser == "" ? "There are no user currently":
+        {allUser === "" ? "There are no user currently":
             <table>
                 <thead>
                     <th>S/N</th>
