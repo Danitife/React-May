@@ -3,14 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Start from './Start';
+import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Start />
-    <App />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route path='/start' element={<Start />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

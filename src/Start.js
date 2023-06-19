@@ -1,18 +1,17 @@
 import {useState} from 'react'
 import Something from './Something'
+import MyButton from './components/MyButton'
 import './Start.css'
 const Start = ()=>{
     const [student, setstudent] = useState("")
     const [allStudent, setallStudent] = useState(["Daniel", "Samuel", "Victor", "Micheal"])
     const [check, setcheck] = useState(true)
-    let arr1 = ["Who", "When", "How", "Which", "Where"]
-    let arr2 = ["Since", "1902", ...arr1]
-    console.log(arr2);
     const changeStud = ()=>{
         console.log(student);
     }
     const addStudents = ()=>{
         setallStudent([...allStudent, student])
+        console.log(allStudent);
     }
     const toggleTable = ()=>{
         setcheck(!check)
@@ -25,18 +24,22 @@ const Start = ()=>{
         <>
             <Something />
             <Something />
+
+            <MyButton myClass="btn btn-danger" name="Click me" />
+            <MyButton myClass="btn btn-success " name="Click this" />
+
             <div>
                 <input onChange={(e)=>setstudent(e.target.value)} type="text" />
                 <button onClick={addStudents}>Add stud</button>
             </div>
             <div>
                 {check == true ? 
-                    allStudent.map((el, i)=>(
-                        <ul>
-                            <li>{i+1}.{el}</li>
-                        </ul>
-                    )):
-                <h1>Switch check to true</h1>
+                    <ul className='bg-warning'>{
+                        allStudent.map((el, i)=>(
+                            <li key={i}>{i+1}.{el}</li>
+                        ))}</ul>
+                        :
+                        <h1>Switch check to true</h1>
             }
             <button onClick={toggleTable}>{check? "Hide Table": "Show Table"}</button>
                 {/* {
