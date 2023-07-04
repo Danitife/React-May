@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import Start from './Start';
-import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.bundle'
+import { BrowserRouter} from 'react-router-dom';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -13,11 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/start' element={<Start />} />
-      </Routes>
+      <App/>      
     </BrowserRouter>
   </React.StrictMode>
 );
