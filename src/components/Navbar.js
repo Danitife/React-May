@@ -28,7 +28,7 @@ const Navbar = () => {
                                     <li><Link to="/myUsers/user1">User1</Link></li>
                                     <li><Link to="/myUsers/user2">User2</Link></li>
                                     <li><hr class="dropdown-divider" /></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><Link to="/formik_signup">Formik Signup</Link></li>
                                 </ul>
                             </li>
                             <li class="nav-item">

@@ -1,6 +1,24 @@
 {
-    "create": [],
-    "signin": {},
-    "create-post": [],
-    "view-post": []
+  "create": [
+    {
+      "username": "Daniel",
+      "email": "admin@ut.com",
+      "password": "daniel",
+      "id": 1
+    },
+    {
+      "username": "Samuel",
+      "email": "samuel@gmail.com",
+      "password": "samuel",
+      "id": 2
+    }
+  ],
+  "signin": {
+    "username": "Samuel",
+    "email": "samuel@gmail.com",
+    "password": "samuel",
+    "id": 2
+  },
+  "create-post": [],
+  "view-post": []
 }

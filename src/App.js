@@ -8,6 +8,9 @@ import MyUsers from './MyUsers';
 import User1 from './User1';
 import User2 from './User2';
 import Data from './Fetch/Data';
+import Signup from './Formik/Signup';
+import Signin from './Formik/Signin';
+import Dashboard from './Formik/Dashboard';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Route path='/start' element={<Start />} />
         <Route path='/user_info' element={<Users />} />
         <Route path='/data' element={<Data />} />
+        <Route path='/formik_signup' element={<Signup />} />
+        <Route path='/formik_signin' element={<Signin />} />
+        <Route path='/dashboard' element={<Dashboard />} />
 
         
         {/* CHILD ROUTING */}
